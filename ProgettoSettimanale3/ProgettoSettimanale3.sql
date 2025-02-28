@@ -77,6 +77,19 @@ VALUES
 (9, 9, 9, '2025-01-25', 'Via Genova', 'Giovanni Verdi', '2025-01-26', 100.00, 2),
 (10, 10, 10, '2025-02-28', 'Via Verona', 'Sara Neri', '2025-03-01', 50.00, 0);
 
+INSERT INTO VERBALE (idverbale, idanagrafica, idviolazione, DataViolazione, IndirizzoViolazione, Nominativo_Agente, DataTrascrizioneVerbale, Importo, DecurtamentoPunti)
+VALUES
+(11, 1, 4, '2025-03-05', 'Via Libertà 20', 'Giovanni Verdi', '2025-03-06', 120.00, 2),
+(12, 2, 6, '2025-03-10', 'Via Milano 5', 'Laura Bianchi', '2025-03-11', 300.00, 5),
+(13, 3, 7, '2025-03-15', 'Via Libertà', 'Mario Rossi', '2025-03-16', 90.00, 1),
+(14, 4, 2, '2025-03-20', 'Via Napoli 30', 'Sara Neri', '2025-03-21', 75.00, 0),
+(15, 5, 1, '2025-03-25', 'Corso Italia 12', 'Luca Gialli', '2025-03-26', 180.00, 4),
+(16, 6, 3, '2025-03-30', 'Via Venezia 8', 'Anna Azzurri', '2025-03-31', 220.00, 6),
+(17, 7, 5, '2025-04-01', 'Via Bologna 22', 'Paolo Aranci', '2025-04-02', 310.00, 7),
+(18, 8, 9, '2025-04-05', 'Via Bari 17', 'Giulia Viola', '2025-04-06', 95.00, 1),
+(19, 9, 8, '2025-04-10', 'Via Genova 9', 'Francesca Rosa', '2025-04-11', 105.00, 2),
+(20, 10, 10, '2025-04-15', 'Via Verona 15', 'Davide Marrone', '2025-04-16', 50.00, 0);
+
 -- Query 1: Conteggio dei verbali trascritti
 SELECT COUNT(*) AS TotaleVerbali FROM VERBALE;
 
